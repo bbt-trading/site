@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr" translate="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C’est bon, tu es inscrit · B.B.T</title>
+<meta name="description" content="Guide gratuit : les 12 erreurs que presque tout le monde fait en tradant, et dont presque personne ne parle. Avec les checklists à cocher avant chaque trade.">
+<meta name="google" content="notranslate">
+<meta property="og:title" content="La checklist du trader débutant · B.B.T">
+<meta property="og:description" content="Les 12 erreurs que presque tout le monde fait en tradant, et dont presque personne ne parle. Guide gratuit en PDF.">
+<meta property="og:image" content="https://www.bbttrading.fr/guide-apercu.png">
+
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="96x96" href="/b-96.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/b-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/b-180.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--y:#FFC21A;--y2:#FFB000;--box:#0D0B04;--line:#5C4708;--t:#DCDCDC;--t2:#E8E8E8;--mut:#8A8A8A}
+*{box-sizing:border-box}
+html,body{margin:0;background:#000;color:var(--t);font-family:'Montserrat',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.hero{position:relative;padding:72px 20px 36px;background:
+ radial-gradient(640px 640px at 0 0, rgba(249,181,14,.95) 0%, rgba(244,166,4,.70) 16%, rgba(230,150,0,.40) 34%, rgba(205,130,0,.16) 54%, rgba(0,0,0,0) 74%),
+ radial-gradient(360px 360px at 100% 40%, rgba(249,181,14,.55) 0%, rgba(240,160,0,.32) 22%, rgba(215,135,0,.12) 46%, rgba(0,0,0,0) 70%);background-repeat:no-repeat}
+.wrap{max-width:1080px;margin:0 auto}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 400px;column-gap:40px;align-items:center}
+.k{font-size:12px;font-weight:600;letter-spacing:3px;color:var(--y);text-transform:uppercase;margin:0 0 16px}
+h1{font-size:48px;line-height:54px;font-weight:800;color:#fff;margin:0 0 16px;letter-spacing:-.5px;text-wrap:balance}
+.s{font-size:17px;line-height:27px;color:var(--t2);margin:0 0 8px;max-width:600px}
+.pill{display:inline-block;font-size:13px;line-height:20px;color:#BDBDBD;margin:14px 0 0;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:rgba(13,11,4,.75)}
+.pill b{color:var(--y);font-weight:800}
+.f{font-size:14px;line-height:22px;color:var(--y);font-weight:600;margin:16px 0 12px}
+form{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;max-width:560px}
+input[type=email]{background:var(--box);border:1px solid var(--line);border-radius:14px;color:#fff;font:16px 'Montserrat',Arial,sans-serif;height:58px;padding:0 18px;outline:none;transition:border-color .2s,box-shadow .2s;width:100%}
+input[type=email]::placeholder{color:var(--mut)}
+input[type=email]:focus{border-color:var(--y);box-shadow:0 0 0 3px rgba(255,194,26,.18),0 0 24px rgba(255,176,0,.25)}
+.btn{background:linear-gradient(180deg,#FFD24A 0%,#FFB000 100%);border:0;border-radius:14px;height:58px;padding:0 28px;white-space:nowrap;box-shadow:0 0 28px rgba(255,176,0,.45),0 6px 18px rgba(0,0,0,.6);font:700 13px 'Montserrat',Arial,sans-serif;letter-spacing:.6px;text-transform:uppercase;color:#000;cursor:pointer;transition:transform .15s,box-shadow .2s;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+.btn:hover{transform:translateY(-1px);box-shadow:0 0 40px rgba(255,176,0,.65),0 8px 22px rgba(0,0,0,.6)}
+.btn[disabled]{opacity:.7;cursor:wait;transform:none}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.small{font-size:12px;letter-spacing:.3px;color:#A8A8A8;margin:6px 0 0}
+.msg{display:none;max-width:560px;margin:12px 0 0;padding:14px 16px;border-radius:12px;font-size:14px;line-height:22px}
+.msg.ok{display:block;background:var(--box);border:1px solid var(--line);border-left:3px solid var(--y);color:var(--t2)}
+.msg.err{display:block;background:#1a0b0b;border:1px solid #5c1f1f;color:#f0caca}
+.visual img{display:block;width:100%;height:auto}
+.main{padding:24px 20px 40px;background:radial-gradient(620px 620px at 0 100%, rgba(249,181,14,.75) 0%, rgba(240,160,0,.45) 18%, rgba(220,140,0,.20) 40%, rgba(0,0,0,0) 70%) no-repeat}
+.main .k{margin-bottom:22px}
+ul.items{list-style:none;padding:0;margin:0 0 32px;display:grid;grid-template-columns:1fr 1fr;gap:16px;counter-reset:bbt}
+ul.items li{position:relative;counter-increment:bbt;background:var(--box);border:1px solid #2A2105;border-radius:14px;padding:18px 18px 18px 62px;font-size:15.5px;line-height:24px}
+ul.items li:before{content:counter(bbt,decimal-leading-zero);position:absolute;left:20px;top:17px;font-weight:800;font-size:20px;line-height:26px;color:var(--y);letter-spacing:-.5px}
+ul.items li b{color:#fff;font-weight:700}
+.note{font-size:14px;line-height:22px;color:#BDBDBD;border-left:3px solid var(--y);background:var(--box);padding:14px 16px;margin:28px 0 28px;max-width:760px}
+.consent{font-size:12px;line-height:19px;color:var(--mut);margin:0 0 22px;max-width:760px}
+.consent a{color:#BDBDBD}
+.legal{font-size:11.5px;line-height:18px;color:#7A7A7A;border-top:1px solid #222;padding-top:18px;margin:0 0 8px;max-width:760px}
+.legal b{color:#9A9A9A}
+.legal.plain{border:0;padding:0}
+details{margin:4px 0 0;font-size:12px;line-height:19px;color:var(--mut);max-width:760px}
+summary{cursor:pointer;color:#BDBDBD;text-decoration:underline;list-style:none;font-size:12px}
+summary::-webkit-details-marker{display:none}
+details[open] summary{color:var(--y);margin-bottom:12px}
+.pc h4{font-size:13px;color:var(--t2);margin:16px 0 6px;font-weight:700}
+.pc p{font-size:12px;line-height:19px;color:#9A9A9A;margin:0 0 8px}
+.pc a{color:var(--y)}
+@media (max-width:959px){
+ .grid{grid-template-columns:1fr}
+ .text{text-align:center}
+ .text .s{margin-left:auto;margin-right:auto}
+ form,.msg{margin-left:auto;margin-right:auto}
+ .small{text-align:center}
+ .visual{max-width:360px;margin:20px auto 0}
+ ul.items{grid-template-columns:1fr}
+ .cta{display:flex}
+}
+@media (max-width:600px){
+ .hero{padding:24px 20px 20px;background:
+  radial-gradient(380px 380px at 0 0, rgba(249,181,14,.95) 0%, rgba(244,166,4,.65) 18%, rgba(220,140,0,.25) 45%, rgba(0,0,0,0) 72%),
+  radial-gradient(300px 300px at 100% 50%, rgba(249,181,14,.5) 0%, rgba(230,150,0,.22) 30%, rgba(0,0,0,0) 70%);background-repeat:no-repeat}
+ .k{margin-bottom:12px}
+ h1{font-size:31px;line-height:36px;margin-bottom:12px}
+ .s{font-size:15.5px;line-height:24px}
+ .pill{font-size:12.5px;margin-top:12px}
+ .f{margin-top:14px;font-size:13.5px}
+ form{grid-template-columns:1fr;gap:10px}
+ .main{background:radial-gradient(360px 360px at 0 100%, rgba(249,181,14,.75) 0%, rgba(240,160,0,.4) 20%, rgba(0,0,0,0) 70%) no-repeat;padding-bottom:60px}
+ ul.items li{padding-left:58px}
+ ul.items li:before{left:18px}
+}
+.solo{min-height:100vh;display:flex;align-items:center}.solo .text{max-width:620px}.solo .s{margin-bottom:24px}
+</style>
+<meta name="robots" content="noindex">
+</head>
+<body>
+<section class="hero solo"><div class="wrap"><div class="text">
+<p class="k">Inscription confirmée</p>
+<h1>C’est bon, tu es inscrit</h1>
+<p class="s">Le guide « La checklist du trader débutant » part dans ta boîte mail en ce moment. Pense à regarder dans les promotions ou les spams, et ajoute contact@bbttrading.fr à tes contacts pour recevoir la newsletter du lundi.</p>
+<p class="small" style="margin-top:28px">B.B.T · bbttrading.fr · contact@bbttrading.fr</p>
+</div></div></section>
+</body>
+</html>

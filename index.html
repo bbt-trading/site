@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="fr" translate="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La checklist du trader débutant · B.B.T</title>
+<meta name="description" content="Guide gratuit : les 12 erreurs que presque tout le monde fait en tradant, et dont presque personne ne parle. Avec les checklists à cocher avant chaque trade.">
+<meta name="google" content="notranslate">
+<meta property="og:title" content="La checklist du trader débutant · B.B.T">
+<meta property="og:description" content="Les 12 erreurs que presque tout le monde fait en tradant, et dont presque personne ne parle. Guide gratuit en PDF.">
+<meta property="og:image" content="https://www.bbttrading.fr/guide-apercu.png">
+<meta property="og:url" content="https://www.bbttrading.fr/">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="96x96" href="/b-96.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/b-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/b-180.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--y:#FFC21A;--y2:#FFB000;--box:#0D0B04;--line:#5C4708;--t:#DCDCDC;--t2:#E8E8E8;--mut:#8A8A8A}
+*{box-sizing:border-box}
+html,body{margin:0;background:#000;color:var(--t);font-family:'Montserrat',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.hero{position:relative;padding:72px 20px 36px;background:
+ radial-gradient(640px 640px at 0 0, rgba(249,181,14,.95) 0%, rgba(244,166,4,.70) 16%, rgba(230,150,0,.40) 34%, rgba(205,130,0,.16) 54%, rgba(0,0,0,0) 74%),
+ radial-gradient(360px 360px at 100% 40%, rgba(249,181,14,.55) 0%, rgba(240,160,0,.32) 22%, rgba(215,135,0,.12) 46%, rgba(0,0,0,0) 70%);background-repeat:no-repeat}
+.wrap{max-width:1080px;margin:0 auto}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 400px;column-gap:40px;align-items:center}
+.k{font-size:12px;font-weight:600;letter-spacing:3px;color:var(--y);text-transform:uppercase;margin:0 0 16px}
+h1{font-size:48px;line-height:54px;font-weight:800;color:#fff;margin:0 0 16px;letter-spacing:-.5px;text-wrap:balance}
+.s{font-size:17px;line-height:27px;color:var(--t2);margin:0 0 8px;max-width:600px}
+.pill{display:inline-block;font-size:13px;line-height:20px;color:#BDBDBD;margin:14px 0 0;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:rgba(13,11,4,.75)}
+.pill b{color:var(--y);font-weight:800}
+.f{font-size:14px;line-height:22px;color:var(--y);font-weight:600;margin:16px 0 12px}
+form{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;max-width:560px}
+input[type=email]{background:var(--box);border:1px solid var(--line);border-radius:14px;color:#fff;font:16px 'Montserrat',Arial,sans-serif;height:58px;padding:0 18px;outline:none;transition:border-color .2s,box-shadow .2s;width:100%}
+input[type=email]::placeholder{color:var(--mut)}
+input[type=email]:focus{border-color:var(--y);box-shadow:0 0 0 3px rgba(255,194,26,.18),0 0 24px rgba(255,176,0,.25)}
+.btn{background:linear-gradient(180deg,#FFD24A 0%,#FFB000 100%);border:0;border-radius:14px;height:58px;padding:0 28px;white-space:nowrap;box-shadow:0 0 28px rgba(255,176,0,.45),0 6px 18px rgba(0,0,0,.6);font:700 13px 'Montserrat',Arial,sans-serif;letter-spacing:.6px;text-transform:uppercase;color:#000;cursor:pointer;transition:transform .15s,box-shadow .2s;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+.btn:hover{transform:translateY(-1px);box-shadow:0 0 40px rgba(255,176,0,.65),0 8px 22px rgba(0,0,0,.6)}
+.btn[disabled]{opacity:.7;cursor:wait;transform:none}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.small{font-size:12px;letter-spacing:.3px;color:#A8A8A8;margin:6px 0 0}
+.msg{display:none;max-width:560px;margin:12px 0 0;padding:14px 16px;border-radius:12px;font-size:14px;line-height:22px}
+.msg.ok{display:block;background:var(--box);border:1px solid var(--line);border-left:3px solid var(--y);color:var(--t2)}
+.msg.err{display:block;background:#1a0b0b;border:1px solid #5c1f1f;color:#f0caca}
+.visual img{display:block;width:100%;height:auto}
+.main{padding:24px 20px 40px;background:radial-gradient(620px 620px at 0 100%, rgba(249,181,14,.75) 0%, rgba(240,160,0,.45) 18%, rgba(220,140,0,.20) 40%, rgba(0,0,0,0) 70%) no-repeat}
+.main .k{margin-bottom:22px}
+ul.items{list-style:none;padding:0;margin:0 0 32px;display:grid;grid-template-columns:1fr 1fr;gap:16px;counter-reset:bbt}
+ul.items li{position:relative;counter-increment:bbt;background:var(--box);border:1px solid #2A2105;border-radius:14px;padding:18px 18px 18px 62px;font-size:15.5px;line-height:24px}
+ul.items li:before{content:counter(bbt,decimal-leading-zero);position:absolute;left:20px;top:17px;font-weight:800;font-size:20px;line-height:26px;color:var(--y);letter-spacing:-.5px}
+ul.items li b{color:#fff;font-weight:700}
+.note{font-size:14px;line-height:22px;color:#BDBDBD;border-left:3px solid var(--y);background:var(--box);padding:14px 16px;margin:28px 0 28px;max-width:760px}
+.consent{font-size:12px;line-height:19px;color:var(--mut);margin:0 0 22px;max-width:760px}
+.consent a{color:#BDBDBD}
+.legal{font-size:11.5px;line-height:18px;color:#7A7A7A;border-top:1px solid #222;padding-top:18px;margin:0 0 8px;max-width:760px}
+.legal b{color:#9A9A9A}
+.legal.plain{border:0;padding:0}
+details{margin:4px 0 0;font-size:12px;line-height:19px;color:var(--mut);max-width:760px}
+summary{cursor:pointer;color:#BDBDBD;text-decoration:underline;list-style:none;font-size:12px}
+summary::-webkit-details-marker{display:none}
+details[open] summary{color:var(--y);margin-bottom:12px}
+.pc h4{font-size:13px;color:var(--t2);margin:16px 0 6px;font-weight:700}
+.pc p{font-size:12px;line-height:19px;color:#9A9A9A;margin:0 0 8px}
+.pc a{color:var(--y)}
+@media (max-width:959px){
+ .grid{grid-template-columns:1fr}
+ .text{text-align:center}
+ .text .s{margin-left:auto;margin-right:auto}
+ form,.msg{margin-left:auto;margin-right:auto}
+ .small{text-align:center}
+ .visual{max-width:360px;margin:20px auto 0}
+ ul.items{grid-template-columns:1fr}
+ .cta{display:flex}
+}
+@media (max-width:600px){
+ .hero{padding:24px 20px 20px;background:
+  radial-gradient(380px 380px at 0 0, rgba(249,181,14,.95) 0%, rgba(244,166,4,.65) 18%, rgba(220,140,0,.25) 45%, rgba(0,0,0,0) 72%),
+  radial-gradient(300px 300px at 100% 50%, rgba(249,181,14,.5) 0%, rgba(230,150,0,.22) 30%, rgba(0,0,0,0) 70%);background-repeat:no-repeat}
+ .k{margin-bottom:12px}
+ h1{font-size:31px;line-height:36px;margin-bottom:12px}
+ .s{font-size:15.5px;line-height:24px}
+ .pill{font-size:12.5px;margin-top:12px}
+ .f{margin-top:14px;font-size:13.5px}
+ form{grid-template-columns:1fr;gap:10px}
+ .main{background:radial-gradient(360px 360px at 0 100%, rgba(249,181,14,.75) 0%, rgba(240,160,0,.4) 20%, rgba(0,0,0,0) 70%) no-repeat;padding-bottom:60px}
+ ul.items li{padding-left:58px}
+ ul.items li:before{left:18px}
+}
+</style>
+</head>
+<body>
+<section class="hero">
+ <div class="wrap grid">
+  <div class="text">
+   <p class="k">Guide gratuit · B.B.T</p>
+   <h1>La checklist du trader débutant</h1>
+   <p class="s">Les 12 erreurs que presque tout le monde fait en tradant, et dont presque personne ne parle. Avec les checklists à cocher avant chaque trade.</p>
+   <p class="pill">Rejoins <b>400+</b> lecteurs</p>
+   <p class="f">Entre ton email, je t’envoie le guide en PDF.</p>
+   <form id="optin" novalidate>
+    <input id="email" type="email" name="email" placeholder="Ton adresse email" autocomplete="email" inputmode="email" required aria-label="Ton adresse email">
+    <input class="hp" type="text" name="site" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <button class="btn" type="submit" id="go">Recevoir le guide</button>
+   </form>
+   <p class="small">15 pages · Gratuit · Désinscription en 1 clic</p>
+   <div class="msg" id="msg" role="status" aria-live="polite"></div>
+  </div>
+  <div class="visual">
+   <picture><source srcset="guide-apercu.webp" type="image/webp"><img src="guide-apercu.png" width="640" height="760" alt="Aperçu de pages intérieures du guide La checklist du trader débutant"></picture>
+  </div>
+ </div>
+</section>
+
+<section class="main">
+ <div class="wrap">
+  <p class="k">Ce que tu vas trouver dedans</p>
+  <ul class="items">
+   <li><b>Les chiffres officiels de l’AMF et de l’ESMA</b> sur les pertes des particuliers, pour savoir où tu mets les pieds.</li>
+   <li><b>3 checklists à cocher</b> : avant ton premier trade en réel, chaque semaine et chaque jour, pendant et après le trade.</li>
+   <li><b>12 erreurs dont presque personne ne parle</b>, chacune expliquée avec sa source : le spread aux annonces, le swap du mercredi, deux trades qui sont le même pari, le changement d’heure décalé…</li>
+   <li><b>Le mini-lexique de la newsletter</b> : hawkish, dovish, priced in, dot plot, FedWatch…</li>
+  </ul>
+  <a class="btn cta" href="#optin" id="cta2">Recevoir le guide</a>
+  <p class="note">Confirme ton inscription dans l’email que tu vas recevoir : le guide arrive juste après. Ensuite, chaque lundi à midi, ma newsletter : ce qui pourrait faire bouger les marchés dans la semaine. Désinscription en un clic, quand tu veux.</p>
+  <p class="consent">En t’inscrivant, tu acceptes de recevoir le guide, la newsletter du lundi et, de temps en temps, des informations sur les offres de B.B.T. Tes données ne sont jamais vendues. Détails dans la <a href="#politique-confidentialite" id="pclink">politique de confidentialité</a>.</p>
+  <p class="legal"><b>Avertissement.</b> Contenu d’information et d’éducation sur les marchés financiers. Ce n’est ni un conseil en investissement, ni une recommandation d’acheter ou de vendre un instrument financier. Le trading, en particulier avec effet de levier, comporte un risque élevé de perte en capital.</p>
+  <p class="legal plain">B.B.T · bbttrading.fr · contact@bbttrading.fr</p>
+  <details id="politique-confidentialite"><summary>Politique de confidentialité</summary><div class="pc">
+   <p>Dernière mise à jour : 23 octobre 2026.</p>
+   <h4>Qui collecte tes données ?</h4>
+   <p>Les données collectées sur ce site le sont par B.B.T. Pour toute question sur tes données : <a href="mailto:contact@bbttrading.fr">contact@bbttrading.fr</a>.</p>
+   <h4>Quelles données ?</h4>
+   <p>Ton adresse email, ainsi que les données techniques liées à ton inscription et à la lecture des emails (date d’inscription, ouvertures, clics).</p>
+   <h4>Pourquoi ?</h4>
+   <p>Pour t’envoyer le guide « La checklist du trader débutant », la newsletter du lundi et, occasionnellement, des informations sur les offres de B.B.T. La base légale est ton consentement, donné en t’inscrivant et confirmé par email.</p>
+   <h4>Qui y a accès ?</h4>
+   <p>Uniquement B.B.T et ses prestataires techniques : GitHub, qui héberge ce site ; Google, qui transmet ton inscription et gère la messagerie ; Systeme.io, qui conserve la liste des inscrits et envoie les emails. Tes données ne sont jamais vendues ni louées.</p>
+   <h4>Combien de temps ?</h4>
+   <p>Jusqu’à ta désinscription. Si tu n’ouvres plus aucun email pendant 3 ans, tes données sont supprimées.</p>
+   <h4>Tes droits</h4>
+   <p>Tu peux te désinscrire à tout moment grâce au lien présent en bas de chaque email. Tu peux aussi demander l’accès à tes données, leur rectification, leur suppression ou leur portabilité, et t’opposer à leur traitement, en écrivant à <a href="mailto:contact@bbttrading.fr">contact@bbttrading.fr</a>. Si tu estimes que tes droits ne sont pas respectés, tu peux saisir la CNIL (cnil.fr).</p>
+  </div></details>
+ </div>
+</section>
+
+<script>
+(function(){
+  var ENDPOINT = "https://script.google.com/macros/s/AKfycbwmpepmgN7hGi5WmXW7XV7yhE0CQKvvzdiOW3VXqZDlOpwTygun2x8m8ySHhFZ1OJbZ/exec";
+  var form = document.getElementById('optin'), email = document.getElementById('email'),
+      go = document.getElementById('go'), msg = document.getElementById('msg');
+  function show(cls, text){ msg.className = 'msg ' + cls; msg.textContent = text; }
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var v = (email.value || '').trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) { show('err', 'Cette adresse email ne semble pas valide. Vérifie-la et réessaie.'); email.focus(); return; }
+    if (form.site.value) { return; }
+    go.disabled = true; go.textContent = 'Envoi…';
+    fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify({ email: v, source: location.href }) })
+      .then(function(r){ return r.json(); })
+      .then(function(d){
+        if (d && d.ok) {
+          form.style.display = 'none';
+          document.querySelector('.small').style.display = 'none';
+          show('ok', 'C’est presque fini : ouvre l’email que je viens de t’envoyer et clique sur « Confirmer ». Le guide arrive juste après. Pas reçu d’ici 5 minutes ? Regarde dans les promotions ou les spams.');
+        } else { throw new Error('ko'); }
+      })
+      .catch(function(){
+        go.disabled = false; go.textContent = 'Recevoir le guide';
+        show('err', 'L’inscription n’a pas pu être enregistrée. Réessaie dans un instant, ou écris-moi à contact@bbttrading.fr.');
+      });
+  });
+  document.getElementById('cta2').addEventListener('click', function(e){
+    e.preventDefault(); email.scrollIntoView({behavior:'smooth', block:'center'}); setTimeout(function(){ email.focus(); }, 600);
+  });
+  document.getElementById('pclink').addEventListener('click', function(){ document.getElementById('politique-confidentialite').open = true; });
+})();
+</script>
+</body>
+</html>
