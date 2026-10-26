@@ -150,6 +150,7 @@ details[open] summary{color:var(--y);margin-bottom:12px}
 
 <script>
 (function(){
+  try { if (/[?&](abonne=1|utm_source=newsletter)(&|$)/.test(location.search)) localStorage.setItem('bbt_inscrit','1'); } catch(_) {}
   var ENDPOINT = "https://script.google.com/macros/s/AKfycbwmpepmgN7hGi5WmXW7XV7yhE0CQKvvzdiOW3VXqZDlOpwTygun2x8m8ySHhFZ1OJbZ/exec";
   var form = document.getElementById('optin'), email = document.getElementById('email'),
       go = document.getElementById('go'), msg = document.getElementById('msg');
