@@ -112,7 +112,7 @@ details[open] summary{color:var(--y);margin-bottom:12px}
   fetch(ENDPOINT + '?format=json&k=' + encodeURIComponent(c), { credentials: 'omit' })
     .then(function(r){ return r.json(); })
     .then(function(d){
-      if (d && d.ok) { location.replace('/merci.html'); }
+      if (d && d.ok) { try { localStorage.setItem('bbt_inscrit','1'); } catch(_) {} location.replace('/merci.html'); }
       else if (d && d.error === 'expired') { location.replace('/lien-expire.html'); }
       else { location.replace('/erreur.html'); }
     })

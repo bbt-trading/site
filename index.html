@@ -165,6 +165,7 @@ details[open] summary{color:var(--y);margin-bottom:12px}
       .then(function(r){ return r.json(); })
       .then(function(d){
         if (d && d.ok) {
+          try { localStorage.setItem('bbt_inscrit','1'); } catch(_) {}
           form.style.display = 'none';
           document.querySelector('.small').style.display = 'none';
           show('ok', 'C’est presque fini : ouvre l’email que je viens de t’envoyer et clique sur « Confirmer ». Le guide arrive juste après. Pas reçu d’ici 5 minutes ? Regarde dans les promotions ou les spams.');
