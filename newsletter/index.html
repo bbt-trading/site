@@ -140,7 +140,7 @@ footer a{color:#B0B0B0}
         if (d && d.ok) {
           try { localStorage.setItem('bbt_inscrit','1'); } catch(_) {}
           form.style.display = 'none'; document.getElementById('sous').style.display = 'none';
-          show('ok', 'C’est presque fini : ouvre l’email que je viens de t’envoyer et clique sur « Confirmer ». Tu reçois le guide juste après, puis la newsletter lundi à midi. Pas reçu d’ici 5 minutes ? Regarde dans les promotions ou les spams.');
+          show('ok', 'C’est fait, tu es inscrit. Le guide vient de partir dans ta boîte mail, et la newsletter arrive lundi à midi. Pas reçu d’ici 5 minutes ? Regarde dans les promotions ou les spams.');
         } else { throw new Error('ko'); }
       })
       .catch(function(){
