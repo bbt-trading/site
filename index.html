@@ -126,7 +126,7 @@ details[open] summary{color:var(--y);margin-bottom:12px}
    <li><b>Le mini-lexique de la newsletter</b> : hawkish, dovish, priced in, dot plot, FedWatch…</li>
   </ul>
   <a class="btn cta" href="#optin" id="cta2">Recevoir le guide</a>
-  <p class="note">Confirme ton inscription dans l’email que tu vas recevoir : le guide arrive juste après. Ensuite, chaque lundi à midi, ma newsletter : ce qui pourrait faire bouger les marchés dans la semaine. Désinscription en un clic, quand tu veux.</p>
+  <p class="note">Le guide arrive dans ta boîte mail dès ton inscription. Ensuite, chaque lundi à midi, ma newsletter : ce qui pourrait faire bouger les marchés dans la semaine. Désinscription en un clic, quand tu veux.</p>
   <p class="consent">En t’inscrivant, tu acceptes de recevoir le guide, la newsletter du lundi et, de temps en temps, des informations sur les offres de B.B.T. Tes données ne sont jamais vendues. Détails dans la <a href="#politique-confidentialite" id="pclink">politique de confidentialité</a>.</p>
   <p class="legal"><b>Avertissement.</b> Contenu d’information et d’éducation sur les marchés financiers. Ce n’est ni un conseil en investissement, ni une recommandation d’acheter ou de vendre un instrument financier. Le trading, en particulier avec effet de levier, comporte un risque élevé de perte en capital.</p>
   <p class="legal plain">B.B.T · bbttrading.fr · contact@bbttrading.fr</p>
@@ -137,7 +137,7 @@ details[open] summary{color:var(--y);margin-bottom:12px}
    <h4>Quelles données ?</h4>
    <p>Ton adresse email, ainsi que les données techniques liées à ton inscription et à la lecture des emails (date d’inscription, ouvertures, clics).</p>
    <h4>Pourquoi ?</h4>
-   <p>Pour t’envoyer le guide « La checklist du trader débutant », la newsletter du lundi et, occasionnellement, des informations sur les offres de B.B.T. La base légale est ton consentement, donné en t’inscrivant et confirmé par email.</p>
+   <p>Pour t’envoyer le guide « La checklist du trader débutant », la newsletter du lundi et, occasionnellement, des informations sur les offres de B.B.T. La base légale est ton consentement, donné en t’inscrivant.</p>
    <h4>Qui y a accès ?</h4>
    <p>Uniquement B.B.T et ses prestataires techniques : GitHub, qui héberge ce site ; Google, qui transmet ton inscription et gère la messagerie ; Systeme.io, qui conserve la liste des inscrits et envoie les emails. Tes données ne sont jamais vendues ni louées.</p>
    <h4>Combien de temps ?</h4>
@@ -169,7 +169,7 @@ details[open] summary{color:var(--y);margin-bottom:12px}
           try { localStorage.setItem('bbt_inscrit','1'); } catch(_) {}
           form.style.display = 'none';
           document.querySelector('.small').style.display = 'none';
-          show('ok', 'C’est presque fini : ouvre l’email que je viens de t’envoyer et clique sur « Confirmer ». Le guide arrive juste après. Pas reçu d’ici 5 minutes ? Regarde dans les promotions ou les spams.');
+          show('ok', 'C’est fait, tu es inscrit. Le guide vient de partir dans ta boîte mail, et la newsletter arrive lundi à midi. Pas reçu d’ici 5 minutes ? Regarde dans les promotions ou les spams.');
         } else { throw new Error('ko'); }
       })
       .catch(function(){
